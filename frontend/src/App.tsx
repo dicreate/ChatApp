@@ -1,11 +1,11 @@
 import './App.css'
-import { Login, SignUp, Home } from './pages'
+import { /* Login, SignUp, */ Home } from './pages'
 
 function App() {
 
   return (
     <div className='p-4 h-screen flex items-center justify-center'>
-      <SignUp />
+      <Home />
     </div>
   )
 }
