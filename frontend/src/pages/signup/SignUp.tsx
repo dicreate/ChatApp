@@ -2,17 +2,10 @@ import { Link } from 'react-router-dom'
 import GenderCheckbox from './GenderCheckbox'
 import { useState } from 'react'
 import useSignup from '../../hooks/useSignup';
-
-interface InputsState {
-   fullname: string;
-   username: string;
-   password: string;
-   confirmPassword: string;
-   gender: string;
-}
+import { SignupData } from '../../models/auth.models';
 
 const SignUp: React.FC = () => {
-   const [inputs, setInputs] = useState<InputsState>({
+   const [inputs, setInputs] = useState<SignupData>({
       fullname: '',
       username: '',
       password: '',
