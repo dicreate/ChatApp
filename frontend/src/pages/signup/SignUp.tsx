@@ -92,7 +92,9 @@ const SignUp: React.FC = () => {
                </Link>
 
                <div>
-                  <button className='btn btn-block btn-sm mt-2'>Sign Up</button>
+                  <button className='btn btn-block btn-sm mt-2' disabled={loading}>
+                     {loading ? <span className='loading loading-spinner'></span> : "Sign Up"}
+                  </button>
                </div>
             </form>
          </div>
