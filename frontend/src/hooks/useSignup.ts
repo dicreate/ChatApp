@@ -6,7 +6,7 @@ import { SignupData } from "../models/auth.models";
 const useSignup = () => {
    const [loading, setLoading] = useState<boolean>(false);
    
-   const {authUser, setAuthUser} = useAuthContext()
+   const { setAuthUser } = useAuthContext()
 
    const signup = async ({fullname, username, password, confirmPassword, gender}: SignupData) => {
       const success = handleInputErrors({fullname, username, password, confirmPassword, gender})
