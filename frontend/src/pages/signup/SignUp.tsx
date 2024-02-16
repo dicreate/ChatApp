@@ -1,8 +1,8 @@
-import { Link } from 'react-router-dom'
-import GenderCheckbox from './GenderCheckbox'
-import { useState } from 'react'
+import { Link } from 'react-router-dom';
+import GenderCheckbox from './GenderCheckbox';
+import { useState } from 'react';
 import useSignup from '../../hooks/useSignup';
-import { SignupData } from '../../models/auth.models';
+import { SignupData } from '../../models/auth.model';
 
 const SignUp: React.FC = () => {
    const [inputs, setInputs] = useState<SignupData>({

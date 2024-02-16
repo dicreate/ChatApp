@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react";
-import { AuthUserType } from "../models/auth.models";
+import { AuthUserType } from "../models/auth.model";
 
 
 type AuthContextProviderProps = {

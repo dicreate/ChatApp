@@ -1,7 +1,7 @@
 import { useState } from "react"
 import toast from "react-hot-toast"
 import { useAuthContext } from "../context/AuthContext"
-import { LoginData } from "../models/auth.models"
+import { LoginData } from "../models/auth.model"
 
 const useLogin = () => {
   const [loading, setLoading] = useState<boolean>(false)
