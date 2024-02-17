@@ -5,3 +5,11 @@ export interface ConversationType {
    gender: string;
    profilePic: string;
  }
+
+ export type MessageType = {
+  _id: string;
+  message: string;
+  receiverId: string;
+  senderId: string;
+  createdAt: string;
+ }

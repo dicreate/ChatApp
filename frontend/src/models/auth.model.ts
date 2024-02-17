@@ -1,7 +1,14 @@
 export type AuthUserType = {
-   authUser: string | null;
-   setAuthUser: React.Dispatch<React.SetStateAction<string | null>>;
+   authUser: AuthUserInterface | null;
+   setAuthUser: React.Dispatch<React.SetStateAction<AuthUserInterface | null>>;
 };
+
+export interface AuthUserInterface {
+  _id: string;
+  fullname: string;
+  username: string;
+  profilePic: string
+}
 
 export interface SignupData {
    fullname: string;

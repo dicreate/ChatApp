@@ -1,5 +1,5 @@
 import { createContext, ReactNode, useContext, useState } from "react";
-import { AuthUserType } from "../models/auth.model";
+import { AuthUserInterface, AuthUserType } from "../models/auth.model";
 
 
 type AuthContextProviderProps = {
@@ -22,7 +22,7 @@ export const useAuthContext = () => {
 export const AuthContextProvider = ({ children }: AuthContextProviderProps) => {
    const storedUser = localStorage.getItem("chat-user");
    const initialAuthUser = storedUser ? JSON.parse(storedUser) : null;
-   const [authUser, setAuthUser] = useState<string | null>(initialAuthUser);
+   const [authUser, setAuthUser] = useState<AuthUserInterface | null>(initialAuthUser);
 
    return <AuthContext.Provider value={{ authUser, setAuthUser }}>
       {children}
