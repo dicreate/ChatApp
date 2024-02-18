@@ -32,7 +32,7 @@ export const SocketContextProvider = ({ children }: SocketContextProviderProps) 
 
    useEffect(() => {
       if (authUser) {
-         const newSocket = io("http://localhost:5000", {
+         const newSocket = io("https://chat-app-dicreate.onrender.com/", {
             query: {
                userId: authUser._id
             }
@@ -52,6 +52,7 @@ export const SocketContextProvider = ({ children }: SocketContextProviderProps) 
             setSocket(null);
          }
       }
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, [authUser]);
 
    return <SocketContext.Provider value={{ socket, onlineUsers }}>{children}</SocketContext.Provider>
