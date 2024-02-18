@@ -32,7 +32,7 @@ export const SocketContextProvider = ({ children }: SocketContextProviderProps) 
 
    useEffect(() => {
       if (authUser) {
-         const newSocket = io("https://chat-app-dicreate.onrender.com/", {
+         const newSocket = io("https://chat-app-29wv.onrender.com", {
             query: {
                userId: authUser._id
             }
