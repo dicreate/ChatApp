@@ -12,4 +12,5 @@ export interface ConversationType {
   receiverId: string;
   senderId: string;
   createdAt: string;
+  shouldShake: boolean;
  }
