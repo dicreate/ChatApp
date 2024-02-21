@@ -17,13 +17,13 @@ const MessageInput = () => {
          <div className="w-full relative">
             <input
                type="text"
-               className="border text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 text-white"
+               className="border text-md rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 text-white"
                placeholder="Send a message"
                value={message}
                onChange={(e) => setMessage(e.target.value)}
             />
-            <button className="absolute inset-y-0 end-0 flex items-center pe-3">
-               {loading ? <div className="loading loading-spinner"></div> : <BsSend className="text-slate-300" />}
+            <button className="absolute inset-y-0 end-0 flex items-center p-3">
+               {loading ? <div className="loading loading-spinner"></div> : <BsSend className="text-slate-300 h-6 w-6" />}
             </button>
          </div>
 
