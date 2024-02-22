@@ -28,7 +28,7 @@ const Message = ({ message, senderId, createdAt, shouldShake }: propTypes) => {
                <img alt="Tailwind CSS chat bubble component" src={profilePic} />
             </div>
          </div>
-         <div className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass} pb-2`}>
+         <div className={`chat-bubble text-white ${bubbleBgColor} ${shakeClass} pb-2 break-words text-md`}>
             {message}
          </div>
          <div className="chat-footer opacity-50 text-xs flex gap-1 items-center text-white">{formattedTime}</div>
